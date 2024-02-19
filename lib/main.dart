@@ -81,6 +81,7 @@ class _HomeScreenState extends State<HomeScreen> {
             },
             leading: const Icon(Icons.notifications),
             title: const Text('Basic Notification'),
+            subtitle: const Text('with custom sound'),
             trailing: IconButton(
               onPressed: () {
                 LocalNotificationService.cancelNotification(0);
@@ -98,6 +99,7 @@ class _HomeScreenState extends State<HomeScreen> {
             },
             leading: const Icon(Icons.notifications),
             title: const Text('Repeated Notification'),
+            subtitle: const Text('every minute'),
             trailing: IconButton(
               onPressed: () {
                 LocalNotificationService.cancelNotification(1);
@@ -115,6 +117,7 @@ class _HomeScreenState extends State<HomeScreen> {
             },
             leading: const Icon(Icons.notifications),
             title: const Text('Schduled Notification'),
+            subtitle: const Text('after 10 seconds from now'),
             trailing: IconButton(
               onPressed: () {
                 LocalNotificationService.cancelNotification(2);
